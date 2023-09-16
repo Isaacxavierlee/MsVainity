@@ -1,3 +1,4 @@
+/* CSS Styles */
 /* CSS Styles for Desktop */
 body {
     margin: 0;
@@ -23,11 +24,11 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-start; /* Align links to the left */
+    justify-content: flex-end; /* Align links to the right */
 }
 
 .navbar-links li {
-    margin-right: 20px; /* Add margin to space out the links on the right */
+    margin-left: 20px; /* Add margin to space out the links on the right */
 }
 
 .navbar-links a {
@@ -63,10 +64,10 @@ body {
 
     .navbar-links {
         flex-direction: column; /* Stack links vertically on mobile */
-        align-items: flex-start; /* Align links to the left on mobile */
+        align-items: flex-end; /* Align links to the right on mobile */
         position: absolute; /* Position the mobile menu outside the bar */
         top: 70px; /* Adjust the top position to fit your design */
-        left: 0; /* Align the mobile menu to the left */
+        right: 20px; /* Align the mobile menu to the right */
         background-color: #ffffff; /* Background color for mobile menu */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         display: none; /* Hide the mobile menu by default */
@@ -78,10 +79,11 @@ body {
     }
 
     .navbar-links li {
-        margin-right: 0; /* Remove margin for links on mobile */
+        margin-left: 0; /* Remove margin for links on mobile */
         margin-bottom: 10px; /* Add margin between links on mobile */
     }
 }
+
 
 .brand-info {
     display: flex;
