@@ -1,5 +1,3 @@
-/* CSS Styles */
-/* CSS Styles for Desktop */
 /* CSS Styles for Desktop */
 body {
     margin: 0;
@@ -60,23 +58,22 @@ body {
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     .sticky-bar {
-        padding: 10px 20px; /* Adjust padding for the sticky bar on mobile */
+        padding: 10px; /* Adjust padding for the sticky bar on mobile */
+        flex-direction: column; /* Stack elements vertically on mobile */
+        align-items: center; /* Center elements horizontally on mobile */
     }
 
     .navbar-links {
         flex-direction: column; /* Stack links vertically on mobile */
-        align-items: flex-end; /* Align links to the right on mobile */
-        position: absolute; /* Position the mobile menu outside the bar */
-        top: 70px; /* Adjust the top position to fit your design */
-        right: 20px; /* Align the mobile menu to the right */
-        background-color: #ffffff; /* Background color for mobile menu */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        display: none; /* Hide the mobile menu by default */
-        z-index: 101; /* Ensure the mobile menu appears above the bar */
+        align-items: center; /* Center links horizontally on mobile */
+        position: static; /* Remove absolute positioning */
+        background-color: transparent; /* Remove background color for mobile menu */
+        box-shadow: none; /* Remove box shadow for mobile menu */
+        display: flex; /* Show the mobile menu by default */
     }
 
     .navbar-links.active {
-        display: flex; /* Show the mobile menu when active */
+        display: none; /* Hide the mobile menu when active */
     }
 
     .navbar-links li {
@@ -86,31 +83,24 @@ body {
 
     /* Adjust the size of the mobile nav icons */
     .navbar-icon {
-        height: 20px; /* Adjust icon height for mobile */
-        width: 20px; /* Adjust icon width for mobile */
+        height: 24px; /* Adjust icon height for mobile */
+        width: 24px; /* Adjust icon width for mobile */
+        margin-right: 5px; /* Reduce margin for mobile */
+    }
+
+    .brand-info {
+        text-align: center; /* Center-align brand info on mobile */
+    }
+
+    .brand-name {
+        font-size: 24px; /* Reduce font size for the name on mobile */
+    }
+
+    .brand-slogan {
+        font-size: 14px; /* Reduce font size for the slogan on mobile */
     }
 }
 
-
-.brand-info {
-    display: flex;
-    align-items: center; /* Center vertically */
-    text-align: right;
-}
-
-.brand-name {
-    height: 30px; /* Adjust icon height */
-    width: 30px; /* Adjust icon width */
-    font-size: 28px; /* Increase font size for the name */
-    margin: 0;
-    color: #ff6b81; /* Pink color for the name */
-}
-
-.brand-slogan {
-    margin: 0;
-    color: #888;
-    font-style: italic; /* Add italic style to the slogan */
-}
 
 /* Slideshow */
 .image-slider {
