@@ -1,5 +1,6 @@
 /* CSS Styles */
 /* CSS Styles for Desktop */
+/* CSS Styles for Desktop */
 body {
     margin: 0;
     padding: 0;
@@ -81,6 +82,12 @@ body {
     .navbar-links li {
         margin-left: 0; /* Remove margin for links on mobile */
         margin-bottom: 10px; /* Add margin between links on mobile */
+    }
+
+    /* Adjust the size of the mobile nav icons */
+    .navbar-icon {
+        height: 20px; /* Adjust icon height for mobile */
+        width: 20px; /* Adjust icon width for mobile */
     }
 }
 
