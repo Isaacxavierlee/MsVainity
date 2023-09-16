@@ -1,4 +1,4 @@
-/* CSS Styles */
+/* CSS Styles for Desktop */
 body {
     margin: 0;
     padding: 0;
@@ -53,6 +53,34 @@ body {
     margin-right: 10px; /* Add margin to space out the icon */
     display: flex;
     align-items: center; /* Center vertically */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .sticky-bar {
+        padding: 10px 20px; /* Adjust padding for the sticky bar on mobile */
+    }
+
+    .navbar-links {
+        flex-direction: column; /* Stack links vertically on mobile */
+        align-items: flex-start; /* Align links to the left on mobile */
+        position: absolute; /* Position the mobile menu outside the bar */
+        top: 70px; /* Adjust the top position to fit your design */
+        left: 0; /* Align the mobile menu to the left */
+        background-color: #ffffff; /* Background color for mobile menu */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: none; /* Hide the mobile menu by default */
+        z-index: 101; /* Ensure the mobile menu appears above the bar */
+    }
+
+    .navbar-links.active {
+        display: flex; /* Show the mobile menu when active */
+    }
+
+    .navbar-links li {
+        margin-right: 0; /* Remove margin for links on mobile */
+        margin-bottom: 10px; /* Add margin between links on mobile */
+    }
 }
 
 .brand-info {
@@ -354,88 +382,3 @@ p {
 
 
 
-
-/* CSS Styles for Desktop */
-/* ... Your existing styles ... */
-
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    .sticky-bar {
-        padding: 10px 20px; /* Adjust padding for the sticky bar */
-    }
-
-    .navbar-links li {
-        margin-right: 10px; /* Reduce margin for links on smaller screens */
-    }
-
-    .navbar-links a {
-        padding: 8px 12px; /* Adjust padding for the links */
-    }
-
-    .image-slider {
-        width: 100%; /* Adjust the width of the image slider for mobile */
-        float: none; /* Remove float for the image slider */
-        margin-left: 0; /* Remove margin for the slider */
-        margin-top: 20px; /* Adjust margin for spacing */
-    }
-
-    .about-me {
-        padding: 20px; /* Adjust padding for spacing */
-        margin-top: 20px; /* Add margin to separate from the slider */
-        margin-bottom: 20px; /* Adjust margin at the bottom */
-    }
-
-    #typewriter {
-        font-size: 20px; /* Adjust the font size for mobile */
-    }
-
-    h2 {
-        font-size: 28px; /* Adjust font size for headings on mobile */
-        margin-bottom: 10px; /* Adjust margin at the bottom of headings */
-    }
-
-    h2::after {
-        width: 30px; /* Adjust the width of the underline for mobile */
-        height: 1px; /* Adjust the height/thickness of the underline */
-    }
-
-    .business-card {
-        margin: 20px auto; /* Center the card and adjust margin */
-        padding: 15px; /* Adjust padding for spacing */
-        max-width: 100%; /* Allow the card to take full width on mobile */
-    }
-
-    .business-card-title {
-        font-size: 20px; /* Adjust font size for title on mobile */
-    }
-
-    .business-card-info {
-        font-size: 14px; /* Adjust font size for info text on mobile */
-    }
-
-    .about-us,
-    .why-choose-us {
-        padding: 20px; /* Adjust padding for sections on mobile */
-    }
-
-    .about-title h2 {
-        font-size: 24px; /* Adjust font size for the title on mobile */
-        margin-bottom: 5px; /* Adjust margin at the bottom of the title */
-    }
-
-    .about-intro {
-        text-align: left; /* Align introduction text to the left on mobile */
-    }
-
-    .about-image {
-        margin-top: 20px; /* Adjust margin for image on mobile */
-    }
-
-    .about-image img {
-        max-width: 100%; /* Ensure images fit within the container on mobile */
-    }
-
-    p {
-        font-size: 16px; /* Adjust font size for paragraphs on mobile */
-    }
-}
