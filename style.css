@@ -1,4 +1,6 @@
 /* CSS Styles for Desktop */
+/* CSS Styles for Desktop */
+/* CSS Styles for Desktop */
 body {
     margin: 0;
     padding: 0;
@@ -8,14 +10,14 @@ body {
 
 .sticky-bar {
     background-color: #ffffff; /* White background color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Adjust box shadow to make border smaller */
     position: sticky;
     top: 0;
     z-index: 100;
     display: flex;
     justify-content: space-between; /* Space out the content horizontally */
     align-items: center; /* Center the content vertically */
-    padding: 20px 40px; /* Increased padding for a bigger sticky bar */
+    padding: 10px 20px; /* Smaller padding for a smaller sticky bar on mobile */
 }
 
 .navbar-links ul {
@@ -59,17 +61,18 @@ body {
 @media (max-width: 768px) {
     .sticky-bar {
         padding: 10px; /* Adjust padding for the sticky bar on mobile */
-        flex-direction: column; /* Stack elements vertically on mobile */
-        align-items: center; /* Center elements horizontally on mobile */
+        justify-content: center; /* Center the content horizontally on mobile */
+        flex-direction: row; /* Stack elements horizontally on mobile */
+        box-shadow: none; /* Remove box shadow for mobile */
     }
 
     .navbar-links {
-        flex-direction: column; /* Stack links vertically on mobile */
-        align-items: center; /* Center links horizontally on mobile */
+        flex-direction: row; /* Stack links horizontally on mobile */
+        justify-content: center; /* Center the links horizontally on mobile */
         position: static; /* Remove absolute positioning */
         background-color: transparent; /* Remove background color for mobile menu */
-        box-shadow: none; /* Remove box shadow for mobile menu */
         display: flex; /* Show the mobile menu by default */
+        margin-top: 10px; /* Add margin at the top for spacing on mobile */
     }
 
     .navbar-links.active {
@@ -77,8 +80,7 @@ body {
     }
 
     .navbar-links li {
-        margin-left: 0; /* Remove margin for links on mobile */
-        margin-bottom: 10px; /* Add margin between links on mobile */
+        margin-left: 10px; /* Add margin between links on mobile */
     }
 
     /* Adjust the size of the mobile nav icons */
@@ -100,6 +102,7 @@ body {
         font-size: 14px; /* Reduce font size for the slogan on mobile */
     }
 }
+
 
 
 /* Slideshow */
@@ -149,11 +152,15 @@ body {
 
 #typewriter {
     font-family: 'cursive'; /* Set the font to a cursive style */
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 20px; /* Adjust the font size for mobile devices */
     font-weight: bold; /* Make the text bold */
     color: #ffffff; /* White text color */
-    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    white-space: normal; /* Allow text to wrap on smaller screens */
+    text-align: center; /* Center-align the text on mobile */
+    padding: 10px; /* Add padding for spacing on mobile */
+    line-height: 1.4; /* Adjust line height for better readability on mobile */
 }
+
 
 h2 {
     color: #ff6b81; /* Pink text color for headings */
