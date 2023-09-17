@@ -8,13 +8,14 @@
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('img/floral.jpg');  /* Interactive pink background color */
+    background-color: #f5e1ff; /* Light Lavender background color */
     color: #000; /* Black text color */
 }
 
+
 /* Sticky Bar Styles */
 .sticky-bar {
-    background-color: #fff; /* White background color */
+    background-image: url('img/floral.jpg');  /* Interactive pink background color */
     border: 1px solid #ccc; /* Gray border */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -167,15 +168,21 @@ body {
     background: url('your-background-image.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
-    padding: 100px 0; /* Adjust the padding as needed */
+    padding: 40px; /* Adjust the padding as needed */
     text-align: center;
     color: #ffffff; /* Text color for the typewriter effect */
-    border-radius: 50% 50% 0 0; /* Curved top border */
+    border: 2px solid #ff6b81; /* Border style for the border box */
+    border-radius: 20px; /* Add border radius for curved edges */
+    overflow: hidden; /* Hide overflow content */
 }
+
+
 .about-introduction {
     flex: 1;
     text-align: center;
 }
+
+
 h2 {
     color: #ffffff; /* Pink text color for headings */
     font-size: 32px; /* Increase font size for headings */
@@ -208,16 +215,16 @@ h2::after {
 
 /* ... (remaining CSS rules) ... */
 
-
 #typewriter-container {
-    font-family: 'cursive';
-    font-size: 32px;
+    font-family: 'Your-Preferred-Font', cursive; /* Change 'Your-Preferred-Font' to your desired font */
+    font-size: 24px; /* Increase the font size to your preference */
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid #ffffff; /* Typing cursor border */
     padding: 10px;
     animation: typing 3s steps(40) infinite, blink-caret 0.5s step-end infinite;
+    color: #ff6b81; /* Change the color to your desired color (pink) */
 }
 
 @keyframes typing {

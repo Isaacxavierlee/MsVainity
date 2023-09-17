@@ -1,9 +1,9 @@
-
 const phrases = [
-  "Welcome to Beauty Lux WebPage !", 
-  "Hi, I'm Anastasia.",
-  "I'm an Artist.",
-
+    "Welcome to Beauty Lux WebPage !", 
+    "Hi, I'm Anastasia!",
+    "I'm an Artist!",
+    "A Web Developer!",
+    "A Buisness Owner!",
 ];
 
 const typewriter = document.getElementById('typewriter');
@@ -36,4 +36,10 @@ function erase() {
     }
 }
 
-type(); // Start the typewriter animation
+// Start the typewriter animation
+type();
+
+// Change the font and color
+typewriter.style.fontFamily = 'Your-Preferred-Font, cursive'; // Change 'Your-Preferred-Font' to your desired font
+typewriter.style.color = ' #ffffff'; // Change the color to your desired color (pink)
+typewriter.style.fontSize = 32;
