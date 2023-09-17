@@ -111,7 +111,7 @@
 
     .navbar-links a {
         padding: 10px;
-        margin: 10px 0; /* Add space around the links */
+        margin: 5px; /* Add space around the links */
     }
 
     .navbar-links .dropdown {
