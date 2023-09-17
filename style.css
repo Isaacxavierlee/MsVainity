@@ -87,8 +87,8 @@
     font-style: italic;
 }
 
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
+/* Media Query for Mobile Devices (Portrait mode on iPhones) */
+@media (max-width: 375px) { /* Adjust the width to target iPhones in portrait mode */
     .sticky-bar {
         flex-direction: column;
         align-items: flex-start;
@@ -105,6 +105,12 @@
 
     .navbar-links li {
         margin-left: 0;
+        width: 100%; /* Full width for list items on smaller screens */
+    }
+
+    .navbar-links a {
+        padding: 10px 20px;
+        margin-bottom: 5px; /* Add space between the icons and text */
     }
 
     .navbar-links .dropdown {
