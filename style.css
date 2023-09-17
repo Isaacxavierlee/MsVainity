@@ -249,74 +249,64 @@ h2::after {
 /* Why Choose Us Section */
 /* Why Choose Us Section */
 .why-choose-us {
-    background: #ff6b81; /* Solid pink background color */
-    padding: 20px; /* Adequate padding for spacing */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly increased shadow */
-    margin-top: 30px; /* Margin to separate from previous sections */
-    text-align: center; /* Center-align content */
-    position: relative; /* Create a positioning context */
-    overflow: hidden; /* Hide overflowing content for animation */
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f7f7f7; /* Change the background color */
 }
 
-/* Speech bubble tail */
-.why-choose-us::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 15px 15px 0;
-    border-color: #ff6b81 transparent transparent transparent;
-    z-index: -1;
-}
-
-/* Heading styles */
 .why-choose-us h2 {
-    color: #fff; /* White text color for headings */
-    font-size: 32px; /* Increased font size for headings */
-    margin-bottom: 15px; /* Adequate margin at the bottom of headings */
-    position: relative;
+    color: #000; /* Change the text color to black */
 }
 
-/* Underline effect for headings */
-.why-choose-us h2::after {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 2px;
-    background-color: #fff;
-    margin: 0 auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -5px;
+.choose-us-content {
+    text-align: center; /* Center align the content */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Item spacing */
-.choose-us-item {
-    margin-top: 20px; /* Spaced out items */
-}
-
-/* Icon container styles */
-.choose-us-icon {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: #fff;
+.choose-us-items {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 15px;
-    transition: transform 0.3s ease-in-out;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-/* Hover effect for icons */
-.choose-us-icon:hover {
-    transform: scale(1.1) rotate(5deg);
+.choose-us-item {
+    flex: 0 0 calc(50% - 20px);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column; /* Stack icon, title, and description vertically */
+    align-items: center; /* Center align content horizontally */
+    text-align: center; /* Center align content text */
+}
+
+.choose-us-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f5e1ff;
+}
+
+.choose-us-icon {
+    font-size: 36px;
+    margin-bottom: 10px; /* Adjust margin for spacing */
+    color: #ff6b81;
+}
+
+.choose-us-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.choose-us-item p {
+    font-size: 16px;
+    color: #666;
 }
 
 
