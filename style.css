@@ -1,6 +1,4 @@
 /* Sticky Bar Styles */
-/* Sticky Bar Styles */
-/* Sticky Bar Styles */
 .sticky-bar {
     background-color: #ffffff; /* White background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -14,15 +12,16 @@
     padding: 5px 20px; /* Reduced padding */
     max-width: 90%; /* Set a maximum width */
     margin: 0 auto; /* Center the nav bar horizontally */
+    overflow: hidden; /* Hide overflow content */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
-
-
 
 .navbar-links ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
 }
 
 .navbar-links li {
@@ -120,6 +119,7 @@
 
     .navbar-links ul {
         margin-top: 10px;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
     }
 
     .navbar-links li {
