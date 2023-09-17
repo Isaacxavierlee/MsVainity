@@ -19,6 +19,7 @@
 }
 
 .navbar-links li {
+    margin-left: 20px;
     position: relative;
 }
 
@@ -26,12 +27,11 @@
     text-decoration: none;
     color: #ff6b81; /* Pink color for links */
     font-weight: bold;
+    padding: 10px 15px;
     border-radius: 5px;
     background-color: #ffffff; /* White background color for links */
     transition: background-color 0.3s ease;
     display: block;
-    padding: 10px;
-    margin: 5px; /* Add space around the links */
 }
 
 /* Dropdown Styles */
@@ -87,12 +87,11 @@
     font-style: italic;
 }
 
-/* Media Query for Mobile Devices (Portrait mode on iPhones) */
-@media (max-width: 375px) { /* Adjust the width to target iPhones in portrait mode */
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
     .sticky-bar {
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px; /* Reduce padding for better use of screen space */
     }
 
     .navbar-links {
@@ -106,12 +105,6 @@
 
     .navbar-links li {
         margin-left: 0;
-        width: 100%; /* Full width for list items on smaller screens */
-    }
-
-    .navbar-links a {
-        padding: 10px;
-        margin: 5px; /* Add space around the links */
     }
 
     .navbar-links .dropdown {
