@@ -7,7 +7,7 @@
     z-index: 100;
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap onto the next line */
-    justify-content: space-between; /* Spread items evenly */
+    justify-content: flex-start; /* Shift items to the left */
     align-items: center;
     padding: 5px 20px; /* Reduced padding */
     max-width: 90%; /* Set a maximum width */
@@ -25,7 +25,7 @@
 }
 
 .navbar-links li {
-    margin-left: 10px; /* Adjust margin to shift icons to the left */
+    margin-left: 5px; /* Adjust margin to shift icons to the left */
     position: relative;
 }
 
@@ -100,13 +100,12 @@
 }
 
 /* Contact Icon Styles */
-.contact-icon {
+   .contact-icon {
     display: inline-block;
     margin-left: 5px; /* Adjust margin to shift the contact icon slightly to the left */
     margin-right: 5px; /* Add margin to the right for centering */
     margin-top: 10px; /* Add margin to push it below the navigation links */
 }
-
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
@@ -140,5 +139,5 @@
         display: block;
     }
 
-   
+
 }
