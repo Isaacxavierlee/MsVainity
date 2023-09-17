@@ -20,7 +20,7 @@
 }
 
 .navbar-links li {
-    margin-left: 20px;
+    margin-left: 10px; /* Adjust margin to shift icons to the left */
     position: relative;
 }
 
@@ -132,7 +132,7 @@
     }
 
     .contact-icon {
-        margin-left: 0; /* Remove margin for contact icon */
+        margin-left: 10px; /* Adjust margin to shift the contact icon to the left */
         margin-top: 10px; /* Add margin to push it below the navigation links */
     }
 }
