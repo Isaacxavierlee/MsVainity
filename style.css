@@ -1,23 +1,14 @@
-/* CSS Styles for Desktop */
-/* CSS Styles for Desktop */
-/* CSS Styles for Desktop */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff5f9; /* Light pink background color */
-}
-
+/* Sticky Bar Styles */
 .sticky-bar {
     background-color: #ffffff; /* White background color */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Adjust box shadow to make border smaller */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 100;
     display: flex;
-    justify-content: space-between; /* Space out the content horizontally */
-    align-items: center; /* Center the content vertically */
-    padding: 10px 20px; /* Smaller padding for a smaller sticky bar on mobile */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .navbar-links ul {
@@ -25,366 +16,110 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-end; /* Align links to the right */
 }
 
 .navbar-links li {
-    margin-left: 20px; /* Add margin to space out the links on the right */
+    margin-left: 20px;
+    position: relative;
 }
 
 .navbar-links a {
     text-decoration: none;
     color: #ff6b81; /* Pink color for links */
     font-weight: bold;
-    padding: 10px 15px; /* Add padding to make the links clickable */
-    border-radius: 5px; /* Add rounded corners to the links */
+    padding: 10px 15px;
+    border-radius: 5px;
     background-color: #ffffff; /* White background color for links */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease;
+    display: block;
 }
 
-.navbar-links a:hover {
-    background-color: #ffbbe3; /* Lighter pink color on hover */
+/* Dropdown Styles */
+.navbar-links .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+    border: 1px solid #ff6b81;
+    border-radius: 0 0 5px 5px;
+    z-index: 10;
+    backdrop-filter: blur(5px); /* Add a blur effect for a frosted glass look */
 }
 
-/* Additional styling and layout for your homepage content */
+.navbar-links .dropdown li {
+    margin: 0;
+}
 
-/* Icons and brand information */
-.navbar-icon {
-    height: 30px; /* Adjust icon height */
-    width: 30px; /* Adjust icon width */
-    margin-right: 10px; /* Add margin to space out the icon */
+.navbar-links .dropdown a {
+    background-color: transparent; /* Transparent background for dropdown links */
+    color: #ff6b81;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+}
+
+.navbar-links .dropdown a:hover {
+    background-color: #ff6b81; /* Pink background color on hover */
+    color: #ffffff; /* White text color on hover */
+}
+
+/* Show Dropdown on Hover */
+.navbar-links li:hover .dropdown {
     display: flex;
-    align-items: center; /* Center vertically */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-info {
+    text-align: right;
+}
+
+.brand-name {
+    font-size: 24px;
+    color: #000; /* Black color for brand name */
+    margin: 0;
+}
+
+.brand-slogan {
+    font-size: 14px;
+    color: #ff6b81;
+    margin: 0;
+    font-style: italic;
 }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     .sticky-bar {
-        padding: 10px; /* Adjust padding for the sticky bar on mobile */
-        justify-content: center; /* Center the content horizontally on mobile */
-        flex-direction: row; /* Stack elements horizontally on mobile */
-        box-shadow: none; /* Remove box shadow for mobile */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .navbar-links {
-        flex-direction: row; /* Stack links horizontally on mobile */
-        justify-content: center; /* Center the links horizontally on mobile */
-        position: static; /* Remove absolute positioning */
-        background-color: transparent; /* Remove background color for mobile menu */
-        display: flex; /* Show the mobile menu by default */
-        margin-top: 10px; /* Add margin at the top for spacing on mobile */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .navbar-links.active {
-        display: none; /* Hide the mobile menu when active */
+    .navbar-links ul {
+        margin-top: 10px;
     }
 
     .navbar-links li {
-        margin-left: 10px; /* Add margin between links on mobile */
+        margin-left: 0;
     }
 
-    /* Adjust the size of the mobile nav icons */
-    .navbar-icon {
-        height: 24px; /* Adjust icon height for mobile */
-        width: 24px; /* Adjust icon width for mobile */
-        margin-right: 5px; /* Reduce margin for mobile */
+    .navbar-links .dropdown {
+        position: static;
+        display: none;
+        margin-top: 10px;
+        border: none;
     }
 
-    .brand-info {
-        text-align: center; /* Center-align brand info on mobile */
-    }
-
-    .brand-name {
-        font-size: 24px; /* Reduce font size for the name on mobile */
-    }
-
-    .brand-slogan {
-        font-size: 14px; /* Reduce font size for the slogan on mobile */
+    .navbar-links li:hover .dropdown {
+        display: block;
     }
 }
-
-
-
-/* Slideshow */
-.image-slider {
-    width: 40%; /* Adjust the width of the image slider */
-    float: right; /* Float it to the right side */
-    margin-left: 20px; /* Add some spacing between the introduction and the slider */
-    margin-top: 20px; /* Add margin to push down the slider */
-    position: relative;
-    overflow: hidden; /* Hide overflowing content */
-    border: 2px solid #ff6b81; /* Pink border for the image slider */
-    border-radius: 15px; /* Add curved borders to the image slider */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out; /* Smooth transform transition */
-    cursor: pointer; /* Change cursor on hover */
-}
-
-.slide {
-    width: 100%; /* Set a constant width for the images */
-    height: auto;
-    display: block;
-}
-
-/* Introduction section */
-.about-me {
-    display: flex; /* Enable flexbox layout */
-    align-items: center; /* Center vertically */
-    background-color: #fff; /* White background color */
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 15px; /* Add rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    margin-top: 20px; /* Add margin to separate from the slider */
-    margin-bottom: 20px; /* Add margin at the bottom of the "About Me" section */
-    position: relative; /* Create a positioning context for animations */
-    overflow: hidden; /* Hide overflowing content for animation */
-    background-image: url('img/lash.jpg'); /* Add your background image path */
-    background-size: cover; /* Ensure the background image covers the entire container */
-    background-repeat: no-repeat; /* Prevent background image repetition */
-    color: #fff; /* Set text color to white for better visibility */
-}
-
-.about-introduction {
-    flex: 1; /* Expand to fill available space */
-    text-align: center; /* Center-align the content */
-    padding: 20px; /* Add padding for spacing */
-}
-
-#typewriter {
-    font-family: 'cursive'; /* Set the font to a cursive style */
-    font-size: 20px; /* Adjust the font size for mobile devices */
-    font-weight: bold; /* Make the text bold */
-    color: #ffffff; /* White text color */
-    white-space: normal; /* Allow text to wrap on smaller screens */
-    text-align: center; /* Center-align the text on mobile */
-    padding: 10px; /* Add padding for spacing on mobile */
-    line-height: 1.4; /* Adjust line height for better readability on mobile */
-}
-
-
-h2 {
-    color: #ff6b81; /* Pink text color for headings */
-    font-size: 32px; /* Increase font size for headings */
-    margin-bottom: 20px; /* Add margin at the bottom of headings */
-    display: inline-block; /* Make the heading an inline block element */
-    position: relative; /* Create a positioning context */
-}
-
-h2::after {
-    content: ""; /* Add an empty content for the pseudo-element */
-    display: block; /* Turn the pseudo-element into a block element */
-    width: 50px; /* Adjust the width of the underline */
-    height: 2px; /* Adjust the height/thickness of the underline */
-    background-color: #ff6b81; /* Pink color for the underline */
-    margin: 0 auto; /* Center the underline horizontally */
-    position: absolute; /* Position it relative to the heading */
-    left: 0; /* Align it to the left of the heading */
-    right: 0; /* Align it to the right of the heading */
-    bottom: -5px; /* Adjust the vertical position of the underline */
-}
-
-/* Business card styling */
-.business-card {
-    background-color: #fff; /* White background color */
-    border-radius: 15px; /* Add rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    margin: 20px auto; /* Center the card and add margin */
-    padding: 20px; /* Add padding for spacing */
-    max-width: 400px; /* Limit the maximum width of the card */
-    text-align: center; /* Center-align text */
-    transition: transform 0.3s ease; /* Add a smooth scaling animation */
-}
-
-.business-card-inner {
-    position: relative;
-}
-
-.business-card-title {
-    color: #ff6b81; /* Pink text color for title */
-    font-size: 24px; /* Adjust font size for title */
-    font-weight: bold; /* Make title text bold */
-    margin: 0 0 10px; /* Remove margin for title */
-}
-
-.business-card-info {
-    font-size: 16px; /* Adjust font size for info text */
-    color: #333; /* Dark gray text color for info */
-    margin: 5px 0; /* Add margin top and bottom for info */
-}
-
-.business-card:hover {
-    transform: scale(1.05); /* Scale up the card on hover */
-}
-
-/* Style the About Us section */
-/* Style the About Us section */
-.about-us {
-    padding: 40px; /* Add padding for spacing */
-    background-color: #f9f9f9; /* Light gray background color */
-    border-radius: 15px; /* Add rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    margin-top: 20px; /* Add margin to separate from previous sections */
-    overflow: hidden; /* Hide overflowing content for aesthetics */
-}
-
-/* Style the About Us title and line */
-.about-title {
-    text-align: center; /* Center-align content */
-    margin-bottom: 20px; /* Add margin at the bottom of the title */
-}
-
-.about-title h2 {
-    font-family: Arial, sans-serif; /* Change the font family */
-    font-size: 28px; /* Increase font size for the title */
-    color: #ff6b81; /* Pink text color for the title */
-    margin-bottom: 10px; /* Add margin at the bottom of the title */
-    line-height: 1.4; /* Adjust line height for better readability */
-}
-
-
-.about-us {
-    background: linear-gradient(90deg, #ff88b2, #ff6b81);
-    color: #fff;
-    padding: 80px;
-    text-align: center;
-    position: relative;
-}
-
-.about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap-reverse; /* Reverse the order of content on smaller screens */
-}
-
-.about-intro {
-    flex: 1;
-    text-align: left;
-    animation: fadeInLeft 1s ease forwards;
-}
-
-.about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fadeInRight 1s ease forwards;
-}
-
-.about-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-/* Animation keyframes */
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-
-
-/* Why Choose Us Section */
-.why-choose-us {
-    background: linear-gradient(45deg, #ff88b2, #ff6b81); /* Gradient background with pink colors */
-    padding: 40px; /* Add padding for spacing */
-    border-radius: 15px; /* Add rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    margin-top: 20px; /* Add margin to separate from previous sections */
-    text-align: center; /* Center-align content */
-    position: relative; /* Create a positioning context */
-    overflow: hidden; /* Hide overflowing content for animation */
-}
-
-/* Add a 3D effect using CSS transform */
-.why-choose-us::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.1);
-    transform: skew(-5deg, 0);
-    z-index: -1;
-}
-
-.why-choose-us h2 {
-    color: #fff; /* White text color for headings */
-    font-size: 32px; /* Increase font size for headings */
-    margin-bottom: 20px; /* Add margin at the bottom of headings */
-    display: inline-block; /* Make the heading an inline block element */
-    position: relative; /* Create a positioning context */
-}
-
-.why-choose-us h2::after {
-    content: ""; /* Add an empty content for the pseudo-element */
-    display: block; /* Turn the pseudo-element into a block element */
-    width: 50px; /* Adjust the width of the underline */
-    height: 2px; /* Adjust the height/thickness of the underline */
-    background-color: #fff; /* White color for the underline */
-    margin: 0 auto; /* Center the underline horizontally */
-    position: absolute; /* Position it relative to the heading */
-    left: 0; /* Align it to the left of the heading */
-    right: 0; /* Align it to the right of the heading */
-    bottom: -5px; /* Adjust the vertical position of the underline */
-}
-
-.choose-us-item {
-    margin-top: 40px; /* Add margin to space out the items */
-}
-
-.choose-us-icon {
-    width: 80px; /* Set the width and height for the icon container */
-    height: 80px;
-    border-radius: 50%; /* Create a circle */
-    background: #fff; /* White background color for the circle */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 20px; /* Center the icon and add margin at the bottom */
-    transition: transform 0.3s ease-in-out; /* Add a hover effect */
-}
-
-/* Add a 3D effect to icons on hover */
-.choose-us-icon:hover {
-    transform: scale(1.1) rotate(5deg); /* Scale up and rotate the icon on hover */
-}
-
-/* You can add your icon or illustration inside .choose-us-icon */
-
-
-
-
-
 
