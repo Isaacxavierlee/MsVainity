@@ -3,7 +3,7 @@ const phrases = [
     "Hi, I'm Anastasia!",
     "I'm an Artist!",
     "A Web Developer!",
-    "A Buisness Owner!",
+    "A Business Owner!",
 ];
 
 const typewriter = document.getElementById('typewriter');
