@@ -43,7 +43,7 @@
 /* Dropdown Styles */
 .navbar-links .dropdown {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 5px); /* Adjusted to move dropdown below the navbar */
     left: 0;
     display: none;
     flex-direction: column;
