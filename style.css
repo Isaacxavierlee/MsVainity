@@ -40,7 +40,6 @@
     top: 100%;
     left: 0;
     display: none;
-    flex-direction: column;
     background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
     border: 1px solid #ff6b81;
     border-radius: 0 0 5px 5px;
@@ -48,15 +47,12 @@
     backdrop-filter: blur(5px); /* Add a blur effect for a frosted glass look */
 }
 
-.navbar-links .dropdown li {
-    margin: 0;
-}
-
 .navbar-links .dropdown a {
     background-color: transparent; /* Transparent background for dropdown links */
     color: #ff6b81;
     transition: background-color 0.3s ease;
     padding: 10px 20px;
+    text-align: left;
 }
 
 .navbar-links .dropdown a:hover {
@@ -122,4 +118,3 @@
         display: block;
     }
 }
-
