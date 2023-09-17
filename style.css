@@ -94,6 +94,12 @@
     font-style: italic;
 }
 
+/* Contact Icon Styles */
+.contact-icon {
+    display: inline-block;
+    margin-left: 20px; /* Adjust margin as needed */
+}
+
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     .sticky-bar {
@@ -123,5 +129,10 @@
 
     .navbar-links li:hover .dropdown {
         display: block;
+    }
+
+    .contact-icon {
+        margin-left: 0; /* Remove margin for contact icon */
+        margin-top: 10px; /* Add margin to push it below the navigation links */
     }
 }
