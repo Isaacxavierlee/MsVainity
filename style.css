@@ -8,13 +8,14 @@
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff; /* White background color */
+    background-image: url('img/floral.jpg');  /* Interactive pink background color */
     color: #000; /* Black text color */
 }
 
 /* Sticky Bar Styles */
 .sticky-bar {
     background-color: #fff; /* White background color */
+    border: 1px solid #ccc; /* Gray border */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -42,7 +43,13 @@ body {
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+}
+
+/* Add hover effect for links */
+.navbar-links a:hover {
+    background-color: #ff6b81; /* Pink background color on hover */
+    color: #fff; /* White text color on hover */
 }
 
 /* Dropdown Styles */
@@ -73,7 +80,12 @@ body {
 }
 
 .navbar-links .dropdown a:hover {
-    background-color: #eee; /* Light gray background color on hover */
+    background-color:#ff6b81; /* Light gray background color on hover */
+}
+
+/* Add pink hover effect for dropdown icons */
+.navbar-links .dropdown-toggle i:hover {
+    color: #ff6b81; /* Pink icon color on hover */
 }
 
 /* Show Dropdown on Hover */
@@ -120,36 +132,6 @@ body {
     }
 
     .navbar-links ul {
-        flex-direction: column;
-    }
-
-    .navbar-links li {
-        margin-left: 0;
-    }
-
-    .navbar-links .dropdown {
-        position: static;
-        display: none;
-        margin-top: 10px;
-        border: none;
-    }
-
-    .navbar-links li:hover .dropdown {
-        display: block;
-    }
-
-    .navbar-brand {
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .sticky-bar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar-links ul {
         /* Change flex-direction to horizontal for portrait mode */
         flex-direction: row;
         /* Adjust spacing between links */
@@ -175,5 +157,83 @@ body {
 
     .navbar-brand {
         margin-top: 10px;
+    }
+}
+
+/* Add this CSS to your existing stylesheet */
+/* Add this CSS to your existing stylesheet */
+.about-me {
+    margin-top: 10px; /* Adjust the margin as needed */
+    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    padding: 100px 0; /* Adjust the padding as needed */
+    text-align: center;
+    color: #ffffff; /* Text color for the typewriter effect */
+    border-radius: 50% 50% 0 0; /* Curved top border */
+}
+.about-introduction {
+    flex: 1;
+    text-align: center;
+}
+h2 {
+    color: #ffffff; /* Pink text color for headings */
+    font-size: 32px; /* Increase font size for headings */
+    margin-bottom: 20px; /* Add margin at the bottom of headings */
+    display: inline-block; /* Make the heading an inline block element */
+    position: relative; /* Create a positioning context */
+}
+
+h2::after {
+    content: ""; /* Add an empty content for the pseudo-element */
+    display: block; /* Turn the pseudo-element into a block element */
+    width: 50px; /* Adjust the width of the underline */
+    height: 2px; /* Adjust the height/thickness of the underline */
+    background-color: #ff6b81; /* Pink color for the underline */
+    margin: 0 auto; /* Center the underline horizontally */
+    position: absolute; /* Position it relative to the heading */
+    left: 0; /* Align it to the left of the heading */
+    right: 0; /* Align it to the right of the heading */
+    bottom: -5px; /* Adjust the vertical position of the underline */
+}
+
+
+
+/* Add this CSS to your existing stylesheet */
+
+/* ... (previous CSS rules) ... */
+
+/* Pink title style */
+
+
+/* ... (remaining CSS rules) ... */
+
+
+#typewriter-container {
+    font-family: 'cursive';
+    font-size: 32px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #ffffff; /* Typing cursor border */
+    padding: 10px;
+    animation: typing 3s steps(40) infinite, blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #ffffff;
     }
 }
