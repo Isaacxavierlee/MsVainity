@@ -1,42 +1,48 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* White background color */
+    color: #000; /* Black text color */
+}
+
+/* Sticky Bar Styles */
 .sticky-bar {
-    background-color: #ffffff; /* White background color */
+    background-color: #fff; /* White background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 100;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap onto the next line */
-    justify-content: space-between; /* Spread items evenly */
+    justify-content: space-between;
     align-items: center;
-    padding: 5px 20px; /* Reduced padding */
-    max-width: 90%; /* Set a maximum width */
-    margin: 0 auto; /* Center the nav bar horizontally */
-    overflow: hidden; /* Hide overflow content */
-    white-space: nowrap; /* Prevent text from wrapping */
+    padding: 10px 20px; /* Increased padding for better touch experience */
 }
 
+/* Navbar Links Styles */
 .navbar-links ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling for small screens */
 }
 
 .navbar-links li {
-    margin-left: 10px; /* Adjust margin to shift icons to the left */
+    margin-left: 20px; /* Adjust spacing between links */
     position: relative;
 }
 
 .navbar-links a {
     text-decoration: none;
-    color: #ff6b81; /* Pink color for links */
+    color: #000; /* Black text color */
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 5px 10px;
     border-radius: 5px;
-    background-color: #ffffff; /* White background color for links */
     transition: background-color 0.3s ease;
-    display: block;
 }
 
 /* Dropdown Styles */
@@ -46,11 +52,11 @@
     left: 0;
     display: none;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
-    border: 1px solid #ff6b81;
+    background-color: #fff; /* White background color for dropdown */
+    border: 1px solid #ccc; /* Gray border */
     border-radius: 0 0 5px 5px;
     z-index: 10;
-    backdrop-filter: blur(5px); /* Add a blur effect for a frosted glass look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-links .dropdown li {
@@ -58,54 +64,53 @@
 }
 
 .navbar-links .dropdown a {
-    background-color: transparent; /* Transparent background for dropdown links */
-    color: #ff6b81;
+    background-color: #fff; /* White background for dropdown links */
+    color: #000; /* Black text color */
     transition: background-color 0.3s ease;
     padding: 10px 20px;
+    display: block;
+    white-space: nowrap;
 }
 
 .navbar-links .dropdown a:hover {
-    background-color: #ff6b81; /* Pink background color on hover */
-    color: #ffffff; /* White text color on hover */
+    background-color: #eee; /* Light gray background color on hover */
 }
 
 /* Show Dropdown on Hover */
 .navbar-links li:hover .dropdown {
-    display: flex;
+    display: block;
 }
 
+/* Brand Styles */
 .navbar-brand {
     display: flex;
     align-items: center;
-    flex-grow: 1; /* Allow the brand to take up available space */
 }
 
 .brand-info {
     text-align: right;
-    flex-grow: 1; /* Allow the brand info to take up available space */
 }
 
 .brand-name {
     font-size: 24px;
-    color: #000; /* Black color for brand name */
+    color: #000; /* Black text color for brand name */
     margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.brand-name i {
+    margin-right: 10px;
+    color: #ff6b81; /* Pink crown icon color */
+    font-size: 32px;
 }
 
 .brand-slogan {
     font-size: 14px;
-    color: #ff6b81;
+    color: #000; /* Black text color for slogan */
     margin: 0;
     font-style: italic;
 }
-
-/* Contact Icon Styles */
-.contact-icon {
-    display: inline-block;
-    margin-left: 5px; /* Adjust margin to shift the contact icon slightly to the left */
-    margin-right: 5px; /* Add margin to the right for centering */
-    margin-top: 10px; /* Add margin to push it below the navigation links */
-}
-
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
@@ -114,14 +119,8 @@
         align-items: flex-start;
     }
 
-    .navbar-links {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
     .navbar-links ul {
-        margin-top: 10px;
-        overflow-x: hidden; /* Hide horizontal scrollbar */
+        flex-direction: column;
     }
 
     .navbar-links li {
@@ -139,5 +138,7 @@
         display: block;
     }
 
-   
+    .navbar-brand {
+        margin-top: 10px;
+    }
 }
