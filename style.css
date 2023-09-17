@@ -1,4 +1,6 @@
 /* Sticky Bar Styles */
+/* Sticky Bar Styles */
+/* Sticky Bar Styles */
 .sticky-bar {
     background-color: #ffffff; /* White background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -7,10 +9,14 @@
     z-index: 100;
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap onto the next line */
-    justify-content: space-between;
+    justify-content: space-between; /* Spread items evenly */
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 20px; /* Reduced padding */
+    max-width: 90%; /* Set a maximum width */
+    margin: 0 auto; /* Center the nav bar horizontally */
 }
+
+
 
 .navbar-links ul {
     list-style: none;
@@ -97,7 +103,7 @@
 /* Contact Icon Styles */
 .contact-icon {
     display: inline-block;
-    margin-left: 20px; /* Adjust margin as needed */
+    margin-left: 10px; /* Adjust margin to shift the contact icon to the left */
 }
 
 /* Media Query for Mobile Devices */
@@ -132,7 +138,6 @@
     }
 
     .contact-icon {
-        margin-left: 10px; /* Adjust margin to shift the contact icon to the left */
         margin-top: 10px; /* Add margin to push it below the navigation links */
     }
 }
