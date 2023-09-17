@@ -129,6 +129,7 @@
     .navbar-links .dropdown {
         position: absolute;
         margin-top: 10px;
+        left: 0; /* Add this line to ensure the dropdown doesn't overlap */
         border: none;
     }
 
