@@ -105,7 +105,7 @@
     margin-left: 10px; /* Adjust margin to shift the contact icon to the left */
 }
 
-/* Media Query for Mobile Devices (Portrait and Landscape) */
+/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     .sticky-bar {
         flex-direction: column;
@@ -127,13 +127,17 @@
     }
 
     .navbar-links .dropdown {
-        position: absolute;
+        position: static;
+        display: none;
         margin-top: 10px;
-        left: 0; /* Add this line to ensure the dropdown doesn't overlap */
         border: none;
     }
 
     .navbar-links li:hover .dropdown {
-        display: flex;
+        display: block;
+    }
+
+    .contact-icon {
+        margin-top: 10px; /* Add margin to push it below the navigation links */
     }
 }
