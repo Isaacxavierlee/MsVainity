@@ -100,11 +100,9 @@
 }
 
 /* Contact Icon Styles */
-   .contact-icon {
+.contact-icon {
     display: inline-block;
-    margin-left: 5px; /* Adjust margin to shift the contact icon slightly to the left */
-    margin-right: 5px; /* Add margin to the right for centering */
-    margin-top: 10px; /* Add margin to push it below the navigation links */
+    margin-left: 10px; /* Adjust margin to shift the contact icon to the left */
 }
 
 /* Media Query for Mobile Devices */
