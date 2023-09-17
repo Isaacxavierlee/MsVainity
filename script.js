@@ -43,3 +43,36 @@ type();
 typewriter.style.fontFamily = 'Your-Preferred-Font, cursive'; // Change 'Your-Preferred-Font' to your desired font
 typewriter.style.color = ' #ffffff'; // Change the color to your desired color (pink)
 typewriter.style.fontSize = 32;
+
+document.addEventListener("DOMContentLoaded", function () {
+    const carouselItems = document.querySelectorAll(".carousel-item");
+    const prevButton = document.querySelector(".prev-button");
+    const nextButton = document.querySelector(".next-button");
+    let currentSlide = 0;
+
+    // Function to show the current slide
+    function showSlide() {
+        carouselItems.forEach((item, index) => {
+            if (index === currentSlide) {
+                item.classList.add("active");
+            } else {
+                item.classList.remove("active");
+            }
+        });
+    }
+
+    // Event listener for the "Next" button
+    nextButton.addEventListener("click", function () {
+        currentSlide = (currentSlide + 1) % carouselItems.length;
+        showSlide();
+    });
+
+    // Event listener for the "Previous" button
+    prevButton.addEventListener("click", function () {
+        currentSlide = (currentSlide - 1 + carouselItems.length) % carouselItems.length;
+        showSlide();
+    });
+
+    // Initially show the first slide
+    showSlide();
+});

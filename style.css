@@ -244,3 +244,153 @@ h2::after {
         border-color: #ffffff;
     }
 }
+
+/* Why Choose Us Section */
+/* Why Choose Us Section */
+/* Why Choose Us Section */
+.why-choose-us {
+    background: #ff6b81; /* Solid pink background color */
+    padding: 20px; /* Adequate padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly increased shadow */
+    margin-top: 30px; /* Margin to separate from previous sections */
+    text-align: center; /* Center-align content */
+    position: relative; /* Create a positioning context */
+    overflow: hidden; /* Hide overflowing content for animation */
+}
+
+/* Speech bubble tail */
+.why-choose-us::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #ff6b81 transparent transparent transparent;
+    z-index: -1;
+}
+
+/* Heading styles */
+.why-choose-us h2 {
+    color: #fff; /* White text color for headings */
+    font-size: 32px; /* Increased font size for headings */
+    margin-bottom: 15px; /* Adequate margin at the bottom of headings */
+    position: relative;
+}
+
+/* Underline effect for headings */
+.why-choose-us h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+}
+
+/* Item spacing */
+.choose-us-item {
+    margin-top: 20px; /* Spaced out items */
+}
+
+/* Icon container styles */
+.choose-us-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for icons */
+.choose-us-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+
+/* Eyelashes Carousel Section */
+/* ... (previous CSS code) ... */
+
+/* Circular Image Carousel */
+/* ... (previous CSS code) ... */
+
+/* ... (previous CSS code) ... */
+
+/* Circular Image Carousel */
+/* Improved Eyelashes Carousel */
+.eyelashes-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative; /* Added for button positioning */
+    margin-top: 20px; /* Add space between the carousel and the About Me section */
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease; /* Add smooth transition for sliding */
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    opacity: 0.6; /* Initially set images as slightly transparent */
+    transform: scale(0.8); /* Initially set images as smaller */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
+  text-align: center; /* Center title text */
+}
+
+.carousel-item.active {
+    opacity: 1; /* Make the active image fully visible */
+    transform: scale(1); /* Scale up the active image */
+}
+
+.carousel-icon {
+    width: 100px; /* Adjust the width of the circular icon container */
+    height: 100px; /* Adjust the height of the circular icon container */
+    border-radius: 50%; /* Make the icon container circular */
+    overflow: hidden; /* Hide any overflowing icon content */
+    background-color: #ff6b81; /* Background color for the circular icons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Text color for the icons */
+    font-size: 24px; /* Adjust the icon size */
+}
+
+.carousel-controls {
+    margin-top: 10px; /* Add some space between icons and buttons */
+}
+
+.prev-button,
+.next-button {
+    background-color: #ff6b81; /* Background color for buttons */
+    color: #fff; /* Text color for buttons */
+    border: none;
+    border-radius: 50%; /* Make buttons circular */
+    padding: 10px; /* Adjust padding for better button size */
+    margin: 5px; /* Add margin to separate buttons */
+    cursor: pointer;
+    font-size: 20px; /* Adjust font size */
+    transition: background-color 0.3s ease; /* Add smooth background color transition */
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #ff88b2; /* Change background color on hover */
+}
+
+/* ... (previous CSS code) ... */
