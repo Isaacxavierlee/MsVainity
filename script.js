@@ -61,38 +61,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Event listener for the "Next" button
-    nextButton.addEventListener("click", function () {
-        currentSlide = (currentSlide + 1) % carouselItems.length;
-        showSlide();
-    });
-
-    // Event listener for the "Previous" button
-    prevButton.addEventListener("click", function () {
-        currentSlide = (currentSlide - 1 + carouselItems.length) % carouselItems.length;
-        showSlide();
-    });
-
-    // Initially show the first slide
-    showSlide();
-});
-// Add this to your JavaScript file (e.g., script.js)
-const imageSlider = document.querySelector('.image-slider');
-const images = ['img/1.jpg', 'img/2.jpg', 'img/3.jpg']; // Replace with your image URLs
-let currentIndex = 0;
-
-function changeImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    const imageUrl = images[currentIndex];
-    const imageElement = document.querySelector('.image');
-    imageElement.src = imageUrl;
-}
-
-setInterval(changeImage, 3000); // Change image every 3 seconds (3000 milliseconds)
-
-function tryOnNail(nailImage) {
-    // Change the source of the female hand image to the selected nail image
-    const femaleHand = document.getElementById("female-hand");
-    femaleHand.src = nailImage;
-}
-
+  });
+    
