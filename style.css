@@ -12,7 +12,6 @@ body {
     color: #000; /* Black text color */
 }
 
-
 /* Sticky Bar Styles */
 .sticky-bar {
     background-image: url('img/floral.jpg');  /* Interactive pink background color */
@@ -162,92 +161,79 @@ body {
 }
 
 /* Add this CSS to your existing stylesheet */
-/* Add this CSS to your existing stylesheet */
+/* Introduction Section Styles */
 .about-me {
-    margin-top: 10px; /* Adjust the margin as needed */
-    background: url('your-background-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
-    padding: 40px; /* Adjust the padding as needed */
-    text-align: center;
-    color: #ffffff; /* Text color for the typewriter effect */
-    border: 2px solid #ff6b81; /* Border style for the border box */
-    border-radius: 20px; /* Add border radius for curved edges */
-    overflow: hidden; /* Hide overflow content */
+  margin-top: 10px; /* Adjust the margin as needed */
+  position: relative;
+  padding: 40px; /* Adjust the padding as needed */
+  text-align: center;
+  color: #ffffff; /* Text color for the typewriter effect */
+  border: 2px solid #ff6b81; /* Border style for the border box */
+  border-radius: 20px; /* Add border radius for curved edges */
+  overflow: hidden; /* Hide overflow content */
 }
-
 
 .about-introduction {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 
-
 h2 {
-    color: #ffffff; /* Pink text color for headings */
-    font-size: 32px; /* Increase font size for headings */
-    margin-bottom: 20px; /* Add margin at the bottom of headings */
-    display: inline-block; /* Make the heading an inline block element */
-    position: relative; /* Create a positioning context */
+  color: #ffffff; /* Pink text color for headings */
+  font-size: 32px; /* Increase font size for headings */
+  margin-bottom: 20px; /* Add margin at the bottom of headings */
+  display: inline-block; /* Make the heading an inline block element */
+  position: relative; /* Create a positioning context */
 }
 
 h2::after {
-    content: ""; /* Add an empty content for the pseudo-element */
-    display: block; /* Turn the pseudo-element into a block element */
-    width: 50px; /* Adjust the width of the underline */
-    height: 2px; /* Adjust the height/thickness of the underline */
-    background-color: #ff6b81; /* Pink color for the underline */
-    margin: 0 auto; /* Center the underline horizontally */
-    position: absolute; /* Position it relative to the heading */
-    left: 0; /* Align it to the left of the heading */
-    right: 0; /* Align it to the right of the heading */
-    bottom: -5px; /* Adjust the vertical position of the underline */
+  content: ""; /* Add an empty content for the pseudo-element */
+  display: block; /* Turn the pseudo-element into a block element */
+  width: 50px; /* Adjust the width of the underline */
+  height: 2px; /* Adjust the height/thickness of the underline */
+  background-color: #ff6b81; /* Pink color for the underline */
+  margin: 0 auto; /* Center the underline horizontally */
+  position: absolute; /* Position it relative to the heading */
+  left: 0; /* Align it to the left of the heading */
+  right: 0; /* Align it to the right of the heading */
+  bottom: -5px; /* Adjust the vertical position of the underline */
 }
 
-
-
-/* Add this CSS to your existing stylesheet */
-
-/* ... (previous CSS rules) ... */
-
-/* Pink title style */
-
-
-/* ... (remaining CSS rules) ... */
-
 #typewriter-container {
-    font-family: 'Your-Preferred-Font', cursive; /* Change 'Your-Preferred-Font' to your desired font */
-    font-size: 24px; /* Increase the font size to your preference */
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid #ffffff; /* Typing cursor border */
-    padding: 10px;
-    animation: typing 3s steps(40) infinite, blink-caret 0.5s step-end infinite;
-    color: #ff6b81; /* Change the color to your desired color (pink) */
+  font-family: 'Your-Preferred-Font', cursive; /* Change 'Your-Preferred-Font' to your desired font */
+  font-size: 24px; /* Increase the font size to your preference */
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ffffff; /* Typing cursor border */
+  padding: 10px;
+  animation: typing 3s steps(40) infinite, blink-caret 0.5s step-end infinite;
+  color: #ff6b81; /* Change the color to your desired color (pink) */
 }
 
 @keyframes typing {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 @keyframes blink-caret {
-    0%, 100% {
-        border-color: transparent;
-    }
-    50% {
-        border-color: #ffffff;
-    }
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffffff;
+  }
 }
+
 
 /* Why Choose Us Section */
 /* Why Choose Us Section */
 /* Why Choose Us Section */
+/* Add this to style.css */
 .why-choose-us {
     text-align: center;
     padding: 40px 0;
@@ -274,7 +260,7 @@ h2::after {
 }
 
 .choose-us-item {
-    flex: 0 0 calc(50% - 20px);
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the size of the items to fit three in a row */
     margin: 20px 0;
     padding: 20px;
     border-radius: 10px;
@@ -299,13 +285,13 @@ h2::after {
 }
 
 .choose-us-item h3 {
-    font-size: 20px;
+    font-size: 18px; /* Make the title smaller */
     margin: 10px 0;
     color: #333;
 }
 
 .choose-us-item p {
-    font-size: 16px;
+    font-size: 14px; /* Make the description smaller */
     color: #666;
 }
 
@@ -320,67 +306,222 @@ h2::after {
 
 /* Circular Image Carousel */
 /* Improved Eyelashes Carousel */
-.eyelashes-carousel {
+/* Improved CSS for the eyelashes carousel */
+/* Unique Eyelashes Carousel Styles */
+/* End of Unique Eyelashes Carousel Styles */
+
+/* ... (previous CSS code) ... */
+/* Add styles for the Lash Stall section */
+/* Updated styles for the Lash Stall section */
+/* Updated styles for the Lash Stall section */
+
+/* Add this to style.css */
+/* Add this to style.css */
+/* Add this to style.css */
+/* Update your CSS (style.css) */
+/* Update your CSS (style.css) for the introduction section background */
+.introduction-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
-    position: relative; /* Added for button positioning */
-    margin-top: 20px; /* Add space between the carousel and the About Me section */
+    padding: 40px;
+    background: linear-gradient(45deg, #ff6b81, #ffb238, #e04aff, #00c9ff); /* Use a gradient background with vibrant colors */
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
 }
 
-.carousel-container {
+/* Rest of your CSS styles remain the same */
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.intro-title {
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.introduction-content {
+    text-align: center;
+}
+
+.introduction-content p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.image-slider {
     display: flex;
-    transition: transform 0.5s ease; /* Add smooth transition for sliding */
-}
-
-.carousel-item {
-    flex: 0 0 auto;
-    margin: 0 10px;
-    opacity: 0.6; /* Initially set images as slightly transparent */
-    transform: scale(0.8); /* Initially set images as smaller */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
-  text-align: center; /* Center title text */
-}
-
-.carousel-item.active {
-    opacity: 1; /* Make the active image fully visible */
-    transform: scale(1); /* Scale up the active image */
-}
-
-.carousel-icon {
-    width: 100px; /* Adjust the width of the circular icon container */
-    height: 100px; /* Adjust the height of the circular icon container */
-    border-radius: 50%; /* Make the icon container circular */
-    overflow: hidden; /* Hide any overflowing icon content */
-    background-color: #ff6b81; /* Background color for the circular icons */
-    display: flex;
-    align-items: center;
     justify-content: center;
-    color: #fff; /* Text color for the icons */
-    font-size: 24px; /* Adjust the icon size */
+    align-items: center;
+    margin-top: 20px;
 }
 
-.carousel-controls {
-    margin-top: 10px; /* Add some space between icons and buttons */
+.circular-frame {
+    width: 150px; /* Adjust the size of the circular frame */
+    height: 150px; /* Adjust the size of the circular frame */
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent; /* Set the background color of the frame to transparent */
 }
 
-.prev-button,
-.next-button {
-    background-color: #ff6b81; /* Background color for buttons */
-    color: #fff; /* Text color for buttons */
+
+.image {
+    max-width: 100%;
+    max-height: 100%; /* Ensure the image takes up the entire circular frame */
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style for the lash types section */
+/* Add styling for the nail try-on section */
+/* Member Registration Section */
+/* Appointment Booking Section */
+/* Appointment Booking Section */
+/* Updated styles for Appointment Booking Section */
+/* Appointment Booking Section */
+/* Appointment Booking Section */
+.appointment-booking {
+    background: linear-gradient(to bottom, #ff6b81, #ff88b2); /* Gradient background */
+    padding: 15px; /* Adjust padding for a smaller box */
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center align the form */
+    color: white; /* Text color on the background image */
+    overflow: hidden; /* Hide overflowing content */
+    transition: box-shadow 0.3s, transform 0.3s; /* Add transition effects */
+}
+
+.appointment-booking:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); /* Hover effect on box-shadow */
+    transform: scale(1.02); /* Hover effect on scale */
+}
+
+.appointment-booking .form-group {
+    margin-bottom: 15px;
+    position: relative; /* Add position for icon placement */
+}
+
+.appointment-booking label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.8); /* Adjust label text color */
+}
+
+.appointment-booking input[type="text"],
+.appointment-booking input[type="email"],
+.appointment-booking input[type="date"],
+.appointment-booking input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ccc;
+    transition: border-color 0.3s; /* Add transition effect for border color */
+}
+
+.appointment-booking input[type="text"]:focus,
+.appointment-booking input[type="email"]:focus,
+.appointment-booking input[type="date"]:focus,
+.appointment-booking input[type="time"]:focus {
+    border-color: #ff6b81; /* Change border color on focus */
+}
+
+.appointment-booking button[type="submit"] {
+    background-color: #ff6b81;
+    color: #fff;
     border: none;
-    border-radius: 50%; /* Make buttons circular */
-    padding: 10px; /* Adjust padding for better button size */
-    margin: 5px; /* Add margin to separate buttons */
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
     cursor: pointer;
-    font-size: 20px; /* Adjust font size */
-    transition: background-color 0.3s ease; /* Add smooth background color transition */
+    transition: background-color 0.3s; /* Add transition effect for background color */
 }
 
-.prev-button:hover,
-.next-button:hover {
-    background-color: #ff88b2; /* Change background color on hover */
+.appointment-booking button[type="submit"]:hover {
+    background-color: #ff88b2;
 }
 
-/* ... (previous CSS code) ... */
+/* Member Registration Section */
+.member-registration {
+    background: linear-gradient(to bottom, #3498db, #2980b9); /* Gradient background */
+    padding: 15px; /* Adjust padding for a smaller box */
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center align the form */
+    color: white; /* Text color on the background image */
+    overflow: hidden; /* Hide overflowing content */
+    transition: box-shadow 0.3s, transform 0.3s; /* Add transition effects */
+}
+
+.member-registration:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); /* Hover effect on box-shadow */
+    transform: scale(1.02); /* Hover effect on scale */
+}
+
+.member-registration .form-group {
+    margin-bottom: 15px;
+    position: relative; /* Add position for icon placement */
+}
+
+.member-registration label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.8); /* Adjust label text color */
+}
+
+.member-registration input[type="text"],
+.member-registration input[type="email"],
+.member-registration input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ff6b81;
+    transition: border-color 0.3s; /* Add transition effect for border color */
+}
+
+.member-registration input[type="text"]:focus,
+.member-registration input[type="email"]:focus,
+.member-registration input[type="password"]:focus {
+    border-color: #ff6b81; /* Change border color on focus */
+}
+
+.member-registration button[type="submit"] {
+    background-color: #3498db; /* Change the background color to blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition effect for background color */
+}
+
+.member-registration button[type="submit"]:hover {
+    background-color: #2980b9; /* Change the hover background color to a slightly different shade of blue */
+}
+

@@ -2,37 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<title>BeautyLux - Eyelash Boutique</title>
+<title>RoyalVanity - Eyelash Boutique</title>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Style for the colored icons in the dropdown menus */
+        .navbar-links .dropdown li a .icon {
+            margin-right: 10px;
+        }
+    </style>
+
+    <title>RoyalVanity - Eyelash Boutique</title>
 </head>
 <body>
     <header class="sticky-bar">
         <nav class="navbar-links">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="#appointments">Appointments</a></li>
                 <li>
                     <a href="#services">Services</a>
                     <!-- Dropdown for Services -->
                     <ul class="dropdown">
-                        <li><a href="#service1">Service 1</a></li>
-                        <li><a href="#service2">Service 2</a></li>
-                        <li><a href="#service3">Service 3</a></li>
+                        <li><a href="#service1"><i class="fas fa-cut"></i> Service 1</a></li>
+                        <li><a href="#service2"><i class="fas fa-paint-brush"></i> Service 2</a></li>
+                        <li><a href="#service3"><i class="fas fa-spa"></i> Service 3</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#products">Products</a>
                     <!-- Dropdown for Products -->
                     <ul class="dropdown">
-                        <li><a href="#product1">Product 1</a></li>
-                        <li><a href="#product2">Product 2</a></li>
-                        <li><a href="#product3">Product 3</a></li>
+                        <li><a href="#product1"><i class="fas fa-eye"></i> Lashes</a></li>
+                        <li><a href="#product2"><i class="fas fa-hand-sparkles"></i> Nails</a></li>
+                        <li><a href="#product3"><i class="fas fa-brow"></i> Eye Brows</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#contact">Contact</a>
+                    <!-- Dropdown for Contact -->
+                    <ul class="dropdown">
+                        <li><a href="#linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="#instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#telegram"><i class="fab fa-telegram"></i> Telegram</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <div class="navbar-brand">
@@ -40,7 +67,7 @@
                 <div>
                     <h1 class="brand-name">
                         <i class="fas fa-crown"></i> <!-- Font Awesome crown icon -->
-                        BeautyLux
+                        RoyalVanity
                     </h1>
                     <p class="brand-slogan">
                         Where Lashes Meet Luxury.
@@ -50,23 +77,52 @@
         </div>
     </header>
 
+    <!-- Rest of your HTML content goes here -->
+
+
 
     <!-- Your homepage content goes here -->
   <!-- Your homepage content goes here -->
 <!-- Add this within your About Me section -->
 <!-- Add this within your About Me section -->
-<div class="about-me" style="background: url('img/lash.jpg') no-repeat center center fixed; background-size: cover;">
-    <div class="about-introduction">
-        <h2>About Me</h2>
-        <p>
-        <div class="typewriter-container">
-            <span id="typewriter"></span>
+
+
+<!-- Add this section below the "Why Choose Us" section -->
+<!-- Add this section below the "Why Choose Us" section -->
+<!-- Add this section below the "About Me" section -->
+<!-- Add this section below the "About Me" section -->
+<!-- Add this section below the "About Me" section -->
+<section class="introduction-section">
+    <h2 class="intro-title">Welcome to RoyalVanity</h2>
+    <div class="introduction-content">
+        <p>Discover the world of luxurious eyelashes with RoyalVanity. Our skilled professionals are dedicated to enhancing your natural beauty and confidence.</p>
+    </div>
+    <div class="image-slider">
+        <div class="circular-frame">
+            <img class="image" src="img/image1.jpg" alt="Image 1">
         </div>
     </div>
+</section>
+
+
+<div class="about-me" style="background: url('img/lash.jpg') no-repeat center center fixed; background-size: cover;">
+  <div class="about-introduction">
+    <h2>About Me</h2>
+    <div class="typewriter-container">
+      <span id="typewriter"></span>
+    </div>
+  </div>
 </div>
 
 
+
+
+
+
+  
+
 <!-- ... (previous HTML code) ... -->
+<!-- Add this within your About Me section -->
 
 <!-- Circular Image Carousel -->
 <!-- ... (previous HTML code) ... -->
@@ -75,38 +131,7 @@
 <!-- ... (previous HTML code) ... -->
 
 <!-- Circular Icon Carousel -->
-<section class="eyelashes-carousel">
-    <div class="carousel-container">
-        <div class="carousel-item">
-            <div class="carousel-icon">
-                <i class="fas fa-eye"></i> <!-- Eye Icon -->
-            </div>
-            <h3 class="carousel-title">Natural</h3>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-icon">
-                <i class="fas fa-eye"></i> <!-- Eye Icon -->
-            </div>
-            <h3 class="carousel-title">Fluffy</h3>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-icon">
-                <i class="fas fa-eye"></i> <!-- Eye Icon -->
-            </div>
-            <h3 class="carousel-title">Russian</h3>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-icon">
-                <i class="fas fa-eye"></i> <!-- Eye Icon -->
-            </div>
-            <h3 class="carousel-title">Volume</h3>
-        </div>
-    </div>
-    <div class="carousel-controls">
-        <button class="prev-button"><i class="fas fa-arrow-left"></i></button>
-        <button class="next-button"><i class="fas fa-arrow-right"></i></button>
-    </div>
-</section>
+
 
 
 <!-- ... (remaining HTML code) ... -->
@@ -115,8 +140,6 @@
 
 
 <!-- ... (remaining HTML code) ... -->
-
-
 
 
 
@@ -142,28 +165,28 @@
         <div class="choose-us-items">
             <div class="choose-us-item">
                 <div class="choose-us-icon">
-                    <i class="fas fa-users"></i>
+                    <i class="fas fa-users"></i> <!-- Add the user icon here -->
                 </div>
                 <h3>Experienced Professionals</h3>
                 <p>Our team of experienced lash artists ensures top-notch treatments.</p>
             </div>
             <div class="choose-us-item">
                 <div class="choose-us-icon">
-                    <i class="fas fa-gem"></i>
+                    <i class="fas fa-gem"></i> <!-- Add the gem icon here -->
                 </div>
                 <h3>Premium Products</h3>
                 <p>We use high-quality lash products for safe and stunning results.</p>
             </div>
             <div class="choose-us-item">
                 <div class="choose-us-icon">
-                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i> <!-- Add the heart icon here -->
                 </div>
                 <h3>Customer Satisfaction</h3>
                 <p>Your satisfaction is our priority. We guarantee your perfect look.</p>
             </div>
             <div class="choose-us-item">
                 <div class="choose-us-icon">
-                    <i class="fas fa-comments"></i>
+                    <i class="fas fa-comments"></i> <!-- Add the comments icon here -->
                 </div>
                 <h3>1-1 Professional Consultation</h3>
                 <p>Get personalized advice with our 1-1 professional consultations.</p>
@@ -171,8 +194,93 @@
         </div>
     </div>
 </section>
+  
+<section class="member-registration">
+    <h2 class="section-title">Member Registration</h2>
+    <div class="registration-form">
+        <form>
+            <!-- Add icons to labels here if needed -->
+            <div class="form-group">
+                <label for="username">
+                    <i class="fas fa-user"></i> <!-- Add the user icon here -->
+                    Username
+                </label>
+                <input type="text" id="username" name="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="email">
+                    <i class="fas fa-envelope"></i> <!-- Add the envelope icon here -->
+                    Email
+                </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">
+                    <i class="fas fa-lock"></i> <!-- Add the lock icon here -->
+                    Password
+                </label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="appointment-booking">
+    <h2 class="section-title">Book an Appointment</h2>
+    <div class="booking-form">
+        <form>
+            <!-- Add icons to labels here if needed -->
+            <div class="form-group">
+                <label for="name">
+                    <i class="fas fa-user"></i> <!-- Add the user icon here -->
+                    Your Name
+                </label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">
+                    <i class="fas fa-envelope"></i> <!-- Add the envelope icon here -->
+                    Email
+                </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="date">
+                    <i class="far fa-calendar-alt"></i> <!-- Add the calendar icon here -->
+                    Date
+                </label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+                <label for="time">
+                    <i class="far fa-clock"></i> <!-- Add the clock icon here -->
+                    Time
+                </label>
+                <input type="time" id="time" name="time">
+            </div>
+            <div class="form-group">
+                <button type="submit">Book Now</button>
+            </div>
+        </form>
+    </div>
+</section>
 
 
+
+
+
+
+
+
+
+
+
+
+  
+  
   
 <script src="script.js"></script>
   
